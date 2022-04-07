@@ -1,0 +1,1562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+
+    <include
+        android:id="@+id/top_toolbar"
+        layout="@layout/toolbar" />
+
+
+
+    <ScrollView
+        android:layout_below="@+id/top_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+        <!-- Singer Home page start -->
+
+
+        <LinearLayout
+            android:id="@+id/home_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+            <!-- Home page start -->
+
+
+            <LinearLayout
+                android:id="@+id/singer_homepage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/top_singers"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Top Singers"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="15dp"
+                        />
+
+
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            >
+
+
+
+
+                            <!-- Justin Bieber start -->
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="157dp"
+                                android:orientation="vertical"
+                                android:background="#73e23b"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginLeft="15dp"
+                                >
+
+
+                                <RelativeLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    >
+
+
+                                    <TextView
+                                        android:layout_width="150dp"
+                                        android:layout_height="150dp"
+                                        android:background="@drawable/justin_beiber"
+                                        android:gravity="bottom"
+                                        android:paddingLeft="10dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="Justin Bieber"
+                                        android:textColor="#e7ba08"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold" />
+
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+                            <!-- Justin Bieber close -->
+
+
+
+                            <!-- Ed Shareen start -->
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="157dp"
+                                android:orientation="vertical"
+                                android:background="#08aae7"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginLeft="15dp"
+                                >
+
+
+                                <RelativeLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    >
+
+
+                                    <TextView
+                                        android:layout_width="150dp"
+                                        android:layout_height="150dp"
+                                        android:background="@drawable/ed_shareen"
+                                        android:gravity="bottom"
+                                        android:paddingLeft="10dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="ED SHAREEN"
+                                        android:textColor="#e7ba08"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold" />
+
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+                            <!-- Ed Shareen start -->
+
+
+
+
+                            <!-- WeekEnd start -->
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="157dp"
+                                android:orientation="vertical"
+                                android:background="#c508e7"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="10dp"
+                                >
+
+
+                                <RelativeLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    >
+
+
+                                    <TextView
+                                        android:layout_width="150dp"
+                                        android:layout_height="150dp"
+                                        android:text="WeekEnd"
+                                        android:textColor="#e7ba08"
+                                        android:textStyle="bold"
+                                        android:textSize="15sp"
+                                        android:background="@drawable/weekend"
+                                        android:gravity="bottom"
+                                        android:paddingLeft="10dp"
+                                        android:paddingBottom="5dp"
+                                        />
+
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+                            <!-- WeekEnd start -->
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </HorizontalScrollView>
+
+
+
+                </LinearLayout>
+
+
+                <!-- Top Singers Close -->
+
+
+
+
+                <!-- Popular Album Start -->
+
+
+                <LinearLayout
+                    android:id="@+id/popular_albums"
+                    android:layout_below="@+id/top_singers"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="25dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Popular Albums"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="15dp"
+                        />
+
+
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            >
+
+
+
+
+                            <!-- Justin Bieber start -->
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="157dp"
+                                android:orientation="vertical"
+                                android:background="#73e23b"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginLeft="15dp"
+                                >
+
+
+                                <RelativeLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    >
+
+
+                                    <ImageView
+                                        android:layout_width="150dp"
+                                        android:layout_height="150dp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/justin_playlist" />
+
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+                            <!-- Justin Bieber close -->
+
+
+
+                            <!-- Ed Shareen start -->
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="157dp"
+                                android:orientation="vertical"
+                                android:background="#08aae7"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginLeft="15dp"
+                                >
+
+
+                                <RelativeLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    >
+
+
+                                    <ImageView
+                                        android:layout_width="150dp"
+                                        android:layout_height="150dp"
+                                        android:src="@drawable/ed_shareen_playlist"
+                                        android:scaleType="centerCrop"
+                                        />
+
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+                            <!-- Ed Shareen start -->
+
+
+
+
+                            <!-- WeekEnd start -->
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="157dp"
+                                android:orientation="vertical"
+                                android:background="#c508e7"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="10dp"
+                                >
+
+
+                                <RelativeLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    >
+
+
+                                    <TextView
+                                        android:layout_width="150dp"
+                                        android:layout_height="150dp"
+                                        android:background="@drawable/weekend_playlist"
+                                        />
+
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+                            <!-- WeekEnd start -->
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </HorizontalScrollView>
+
+
+
+                </LinearLayout>
+
+
+                <!-- Popular Album Close -->
+
+
+
+
+
+                <!-- Artist Personal Profile Start -->
+
+                <LinearLayout
+                    android:id="@+id/justin_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_below="@+id/popular_albums"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    >
+
+
+                    <!-- main profile start -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="horizontal">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/justin_profile_round"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:cardCornerRadius="40dp">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                app:cardCornerRadius="40dp">
+
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="fill"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/justin_beiber" />
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:gravity="bottom"
+                                android:text="More Like"
+                                android:textColor="@color/black"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:text="Justin Bieber"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <!-- main profile end -->
+
+                </LinearLayout>
+
+                <!-- Artist Personal Profile Close -->
+
+
+
+
+
+
+                <!-- artist profile song list start -->
+
+                <LinearLayout
+                    android:id="@+id/justin_songlist"
+                    android:layout_below="@+id/justin_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp"
+                            >
+
+
+                            <!-- 1st song start -->
+
+                            <LinearLayout
+                                android:layout_width="170dp"
+                                android:layout_height="190dp"
+                                android:orientation="vertical"
+                                >
+
+
+                                <ImageView
+                                    android:layout_width="160dp"
+                                    android:layout_height="160dp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/justin_baby" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Baby Baby(Justin Bieber)"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:gravity="center"
+                                    android:textStyle="normal"
+                                    />
+
+                            </LinearLayout>
+
+                            <!-- 1st song end -->
+
+
+
+
+
+                            <!-- 2ns song start -->
+
+                            <LinearLayout
+                                android:layout_width="170dp"
+                                android:layout_height="190dp"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="5dp"
+                                >
+
+
+                                <ImageView
+                                    android:layout_width="160dp"
+                                    android:layout_height="160dp"
+                                    android:src="@drawable/what_do_u_mean"
+                                    android:scaleType="centerCrop"
+                                    android:layout_gravity="center"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="What do you mean?"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:gravity="center"
+                                    android:textStyle="normal"
+                                    />
+
+                            </LinearLayout>
+
+                            <!-- 2nd song end -->
+
+
+
+
+                            <!-- 3rd song start -->
+
+                            <LinearLayout
+                                android:layout_width="170dp"
+                                android:layout_height="190dp"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="15dp"
+                                >
+
+
+                                <ImageView
+                                    android:layout_width="160dp"
+                                    android:layout_height="160dp"
+                                    android:src="@drawable/lonely"
+                                    android:scaleType="centerCrop"
+                                    android:layout_gravity="center"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Lonely(Justin Bieber)"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:gravity="center"
+                                    android:textStyle="normal"
+                                    />
+
+                            </LinearLayout>
+
+                            <!-- 3rd song end -->
+
+
+
+                        </LinearLayout>
+
+
+                    </HorizontalScrollView>
+
+
+
+                </LinearLayout>
+
+                <!-- artist profile song list end -->
+
+
+
+
+            </LinearLayout>
+
+
+            <!-- Home page close -->
+
+
+
+
+            <!-- singer profile start -->
+
+
+
+
+            <com.amar.library.ui.StickyScrollView
+                android:id="@+id/singer_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:stickyHeader="@id/singer_profiletop"
+                android:visibility="gone"
+                >
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="50dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:src="@drawable/ghost_justin"
+                            android:scaleType="centerCrop"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+                    <!-- sticky header start -->
+
+
+
+                    <LinearLayout
+                        android:id="@+id/singer_profiletop"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:background="#F2F3F5"
+                        android:weightSum="120"
+                        android:layout_marginTop="10dp"
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/singer_profile_back_btn"
+                            android:layout_width="40dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/back_icon"
+                            android:layout_gravity="center"
+                            android:layout_weight="30"
+                            android:layout_marginLeft="-10dp"
+                            />
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Justin Bieber"
+                            android:textColor="@color/black"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_weight="60"
+                            android:paddingLeft="40dp"
+                            />
+
+
+
+                        <ImageView
+                            android:id="@+id/play_btn"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/play_button"
+                            android:layout_gravity="center"
+                            android:layout_weight="30"
+                            />
+
+
+                        <ImageView
+                            android:id="@+id/pause_btn"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/pause"
+                            android:layout_gravity="center"
+                            android:layout_weight="30"
+                            android:visibility="gone"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+
+                    <!-- sticky header close -->
+
+
+
+
+                    <!-- sub header start -->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:weightSum="90"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="75,634,630 monthly listeners"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_weight="60"
+                            android:layout_marginLeft="-30dp"
+                            />
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="70dp"
+                            android:layout_height="35dp"
+                            app:cardCornerRadius="8dp"
+                            android:background="#f3f3f3"
+                            android:layout_weight="30"
+                            android:layout_marginRight="8dp"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Follow"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="70dp"
+                            android:layout_height="35dp"
+                            app:cardCornerRadius="8dp"
+                            android:background="#f3f3f3"
+                            android:visibility="gone"
+                            android:layout_weight="30"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Unfollow"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                    <!-- sub header close -->
+
+
+
+
+
+
+                    <!-- song list start -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Popular"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            />
+
+
+
+
+                        <!-- 1st song start -->
+
+
+                        <LinearLayout
+                            android:id="@+id/stay_song"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp"
+                            >
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:text="1"
+                                android:textColor="@color/black"
+                                android:textStyle="normal"
+                                android:textSize="18sp"
+                                android:gravity="center"
+                                />
+
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/stay_justin"
+                                android:layout_marginLeft="15dp"
+                                />
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="15dp"
+                                >
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:text="STAY (with Justin Bieber)"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:text="Views: 1,627,677,698"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+                                    />
+
+
+                            </LinearLayout>
+
+
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/three_dot"
+                                android:layout_marginLeft="50dp"
+                                android:layout_gravity="center"
+                                />
+
+
+                            <!-- 1st song close -->
+
+
+                        </LinearLayout>
+
+
+
+
+                        <!-- 2nd song start -->
+
+                        <LinearLayout
+                            android:id="@+id/ghost_song"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp"
+                            >
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:text="2"
+                                android:textColor="@color/black"
+                                android:textStyle="normal"
+                                android:textSize="18sp"
+                                android:gravity="center"
+                                />
+
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ghost_justin"
+                                android:layout_marginLeft="15dp"
+                                />
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="15dp"
+                                >
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:text="Ghost"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:text="Views: 417,677,698"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+                                    />
+
+
+                            </LinearLayout>
+
+
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/three_dot"
+                                android:layout_marginLeft="108dp"
+                                android:layout_gravity="center"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <!-- 2nd song close -->
+
+
+
+
+                        <!-- 3rd song start -->
+
+                        <LinearLayout
+                            android:id="@+id/love_yourself_song"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp"
+                            >
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:text="3"
+                                android:textColor="@color/black"
+                                android:textStyle="normal"
+                                android:textSize="18sp"
+                                android:gravity="center"
+                                />
+
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/love_yourself_justin"
+                                android:layout_marginLeft="15dp"
+                                />
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="15dp"
+                                >
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:text="Love Yourself"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:text="Views: 739,677,530"
+                                    android:textSize="13sp"
+                                    android:textStyle="normal"
+                                    />
+
+
+                            </LinearLayout>
+
+
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/three_dot"
+                                android:layout_marginLeft="109dp"
+                                android:layout_gravity="center"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <!-- 3rd song close -->
+
+
+
+
+                        <!-- popular release start -->
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="35dp"
+                            android:layout_marginBottom="10dp"
+                            >
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Popular releases"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                />
+
+
+
+
+                            <!-- 1st release start -->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="15dp"
+                                >
+
+
+
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="70dp"
+                                    android:src="@drawable/attention_justin"
+                                    android:scaleType="centerCrop"
+                                    />
+
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60dp"
+                                    android:orientation="vertical"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_gravity="center"
+                                    >
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:text="Attension"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="18sp"
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="25dp"
+                                        android:text="Latest release . Single"
+                                        android:textSize="15sp"
+                                        android:textStyle="normal"
+                                        />
+
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+                            <!-- 1st release close -->
+
+
+
+
+
+                            <!-- 2nd release start -->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="15dp"
+                                >
+
+
+
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="70dp"
+                                    android:src="@drawable/ghost_justin"
+                                    android:scaleType="centerCrop"
+                                    />
+
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60dp"
+                                    android:orientation="vertical"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_gravity="center"
+                                    >
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:text="Justice"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="18sp"
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="25dp"
+                                        android:text="2021 . Album"
+                                        android:textSize="15sp"
+                                        android:textStyle="normal"
+                                        />
+
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+                            <!-- 2nd release close -->
+
+
+
+
+
+                            <!-- 3rd release start -->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="15dp"
+                                >
+
+
+
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="70dp"
+                                    android:src="@drawable/stay_justin"
+                                    android:scaleType="centerCrop"
+                                    />
+
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60dp"
+                                    android:orientation="vertical"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_gravity="center"
+                                    >
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:text="Stay (with Justin Bieber)"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="18sp"
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="25dp"
+                                        android:text="2021 . Single"
+                                        android:textSize="15sp"
+                                        android:textStyle="normal"
+                                        />
+
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+                            <!-- 3rd release close -->
+
+
+
+
+
+                        </LinearLayout>
+
+
+                        <!-- popular release close -->
+
+
+
+
+
+
+
+                        <!-- eatureing Start -->
+
+
+                        <LinearLayout
+                            android:id="@+id/justin_popular_albums"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:orientation="vertical"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginBottom="15dp"
+                            >
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Popular Albums"
+                                android:textSize="22sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                />
+
+
+
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    >
+
+
+
+
+                                    <!-- Justin 1st song start -->
+
+                                    <LinearLayout
+                                        android:layout_width="150dp"
+                                        android:layout_height="157dp"
+                                        android:orientation="vertical"
+                                        android:background="#73e23b"
+                                        android:layout_marginTop="15dp"
+                                        >
+
+
+                                        <RelativeLayout
+                                            android:layout_width="150dp"
+                                            android:layout_height="150dp"
+                                            >
+
+
+                                            <ImageView
+                                                android:layout_width="150dp"
+                                                android:layout_height="150dp"
+                                                android:scaleType="centerCrop"
+                                                android:src="@drawable/justin_playlist" />
+
+
+                                        </RelativeLayout>
+
+
+                                    </LinearLayout>
+
+
+                                    <!-- Justin 1st song close -->
+
+
+
+                                    <!-- justin 2nd song start -->
+
+                                    <LinearLayout
+                                        android:layout_width="150dp"
+                                        android:layout_height="157dp"
+                                        android:orientation="vertical"
+                                        android:background="#08aae7"
+                                        android:layout_marginTop="15dp"
+                                        android:layout_marginLeft="15dp"
+                                        >
+
+
+                                        <RelativeLayout
+                                            android:layout_width="150dp"
+                                            android:layout_height="150dp"
+                                            >
+
+
+                                            <ImageView
+                                                android:layout_width="150dp"
+                                                android:layout_height="150dp"
+                                                android:src="@drawable/justin_baby"
+                                                android:scaleType="centerCrop"
+                                                />
+
+
+                                        </RelativeLayout>
+
+
+                                    </LinearLayout>
+
+
+                                    <!-- justin 2nd song start -->
+
+
+
+
+                                    <!-- justin 3rd song start -->
+
+                                    <LinearLayout
+                                        android:layout_width="150dp"
+                                        android:layout_height="157dp"
+                                        android:orientation="vertical"
+                                        android:background="#c508e7"
+                                        android:layout_marginTop="15dp"
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginRight="10dp"
+                                        >
+
+
+                                        <RelativeLayout
+                                            android:layout_width="150dp"
+                                            android:layout_height="150dp"
+                                            >
+
+
+                                            <TextView
+                                                android:layout_width="150dp"
+                                                android:layout_height="150dp"
+                                                android:background="@drawable/attention_justin"
+                                                />
+
+
+                                        </RelativeLayout>
+
+
+                                    </LinearLayout>
+
+
+                                    <!-- justin 3rd song start -->
+
+
+
+
+                                </LinearLayout>
+
+
+
+                            </HorizontalScrollView>
+
+
+
+                        </LinearLayout>
+
+
+                        <!-- justin feature Close -->
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </com.amar.library.ui.StickyScrollView>
+
+
+
+
+            <!-- singer profile close -->
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <!-- singer home page end -->
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+    <!-- Explore layout start -->
+
+
+    <LinearLayout
+        android:id="@+id/explore_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+
+    </LinearLayout>
+
+
+    <!-- Explore layout close -->
+
+
+
+
+
+
+    <!-- Audio Library Start -->
+
+
+    <LinearLayout
+        android:id="@+id/audio_libary_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+    </LinearLayout>
+
+
+    <!-- Audio Library close -->
+
+
+
+
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu"
+        />
+
+
+</RelativeLayout>
