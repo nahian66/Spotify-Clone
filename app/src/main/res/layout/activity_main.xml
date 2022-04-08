@@ -90,6 +90,7 @@
                             <!-- Justin Bieber start -->
 
                             <LinearLayout
+                                android:id="@+id/justin_refer_profile"
                                 android:layout_width="150dp"
                                 android:layout_height="157dp"
                                 android:orientation="vertical"
@@ -776,6 +777,7 @@
 
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/follow_btn"
                             android:layout_width="70dp"
                             android:layout_height="35dp"
                             app:cardCornerRadius="8dp"
@@ -799,12 +801,14 @@
 
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/unfollow_btn"
                             android:layout_width="70dp"
                             android:layout_height="35dp"
                             app:cardCornerRadius="8dp"
                             android:background="#f3f3f3"
                             android:visibility="gone"
                             android:layout_weight="30"
+                            android:layout_marginRight="8dp"
                             >
 
                             <TextView

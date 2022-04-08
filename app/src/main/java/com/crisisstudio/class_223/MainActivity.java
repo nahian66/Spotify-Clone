@@ -55,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout love_yourself_song;
     // love yourself close
 
+    CardView follow_btn, unfollow_btn;
+
     ImageView play_btn, pause_btn;
 
     ImageView singer_profile_back_btn;
@@ -78,6 +80,9 @@ public class MainActivity extends AppCompatActivity {
         singer_homepage = findViewById(R.id.singer_homepage);
         justin_profile = findViewById(R.id.justin_profile);
         singer_profile = findViewById(R.id.singer_profile);
+
+        follow_btn = findViewById(R.id.follow_btn);
+        unfollow_btn = findViewById(R.id.unfollow_btn);
 
         stay_song = findViewById(R.id.stay_song);
         ghost_song = findViewById(R.id.ghost_song);
@@ -124,6 +129,33 @@ public class MainActivity extends AppCompatActivity {
 
                                     singer_homepage.setVisibility(View.GONE);
                                     singer_profile.setVisibility(View.VISIBLE);
+
+
+                                    follow_btn.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+
+                                            follow_btn.setVisibility(View.GONE);
+                                            unfollow_btn.setVisibility(View.VISIBLE);
+
+                                            Toast.makeText(MainActivity.this, "You are now following Justin Bieber", Toast.LENGTH_SHORT).show();
+
+                                        }
+                                    });
+
+
+
+                                    unfollow_btn.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+
+                                            follow_btn.setVisibility(View.VISIBLE);
+                                            unfollow_btn.setVisibility(View.GONE);
+
+                                            Toast.makeText(MainActivity.this, "You are not following Justin Bieber anymore", Toast.LENGTH_SHORT).show();
+
+                                        }
+                                    });
 
 
 
