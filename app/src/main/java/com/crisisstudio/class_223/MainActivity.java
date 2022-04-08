@@ -43,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout home_layout, explore_layout, audio_library_layout;
 
 
+    // justin refer profile start
+    LinearLayout justin_refer_profile;
+    // justin refer profile close
+
+
     // stay start
     LinearLayout stay_song;
     // stay close
@@ -99,6 +104,9 @@ public class MainActivity extends AppCompatActivity {
         singer_profile_back_btn = findViewById(R.id.singer_profile_back_btn);
 
 
+        justin_refer_profile = findViewById(R.id.justin_refer_profile);
+
+
 
 
     /////////////////////////////////////////////////////////////////////////////////////////////////
@@ -120,6 +128,20 @@ public class MainActivity extends AppCompatActivity {
                             home_layout.setVisibility(View.VISIBLE);
                             explore_layout.setVisibility(View.GONE);
                             audio_library_layout.setVisibility(View.GONE);
+
+
+                            // justin refer profile start
+                            justin_refer_profile.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+
+                                    singer_homepage.setVisibility(View.GONE);
+                                    singer_profile.setVisibility(View.VISIBLE);
+
+                                }
+                            });
+                            // justin refer profile close
+
 
 
                             // justin profile start
