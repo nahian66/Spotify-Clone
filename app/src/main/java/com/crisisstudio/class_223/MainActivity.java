@@ -4,32 +4,23 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.provider.MediaStore;
-import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.Switch;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
 import com.amar.library.ui.StickyScrollView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.io.IOException;
-import java.time.Duration;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -72,6 +63,11 @@ public class MainActivity extends AppCompatActivity {
     CardView justin_profile_round;
 
 
+    // animation start
+    Animation left_rightstart, right_leftstart;
+    // animation close
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,6 +103,14 @@ public class MainActivity extends AppCompatActivity {
         justin_refer_profile = findViewById(R.id.justin_refer_profile);
 
 
+        // animation start
+        left_rightstart = AnimationUtils.loadAnimation(MainActivity.this, R.anim.left_right);
+        right_leftstart = AnimationUtils.loadAnimation(MainActivity.this, R.anim.right_left);
+        // animation close
+
+
+
+
 
 
     /////////////////////////////////////////////////////////////////////////////////////////////////
@@ -138,19 +142,9 @@ public class MainActivity extends AppCompatActivity {
                                     singer_homepage.setVisibility(View.GONE);
                                     singer_profile.setVisibility(View.VISIBLE);
 
-                                }
-                            });
-                            // justin refer profile close
 
+                                    singer_profile.startAnimation(left_rightstart);
 
-
-                            // justin profile start
-                            justin_profile_round.setOnClickListener(new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-
-                                    singer_homepage.setVisibility(View.GONE);
-                                    singer_profile.setVisibility(View.VISIBLE);
 
 
                                     follow_btn.setOnClickListener(new View.OnClickListener() {
@@ -187,6 +181,163 @@ public class MainActivity extends AppCompatActivity {
 
                                             singer_homepage.setVisibility(View.VISIBLE);
                                             singer_profile.setVisibility(View.GONE);
+
+                                            home_layout.startAnimation(right_leftstart);
+
+                                        }
+                                    });
+
+
+                                    ConnectivityManager net = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                                    NetworkInfo internet = net.getActiveNetworkInfo();
+
+
+                                    if (internet != null  &&  internet.isConnected() ){
+
+
+
+                                        play_btn.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View v) {
+
+
+
+
+
+                                            }
+                                        });
+
+
+
+
+
+                                        stay_song.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View v) {
+
+                                                if (mediaPlayer != null) mediaPlayer.release();
+
+                                                mediaPlayer = new MediaPlayer();
+                                                try {
+                                                    mediaPlayer.setDataSource("https://codeschoolspy.000webhostapp.com/song/stay_justin.mp3");
+                                                    mediaPlayer.prepare();
+                                                    mediaPlayer.start();
+                                                } catch (IOException e) {
+                                                    e.printStackTrace();
+                                                }
+
+
+                                            }
+                                        });
+
+
+
+
+                                        ghost_song.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View v) {
+
+                                                if ( mediaPlayer != null) mediaPlayer.release();
+
+                                                mediaPlayer = new MediaPlayer();
+                                                try {
+                                                    mediaPlayer.setDataSource("https://codeschoolspy.000webhostapp.com/song/ghost_justin.mp3");
+                                                    mediaPlayer.prepare();
+                                                    mediaPlayer.start();
+                                                } catch (IOException e) {
+                                                    e.printStackTrace();
+                                                }
+
+
+                                            }
+                                        });
+
+
+
+                                        love_yourself_song.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View v) {
+
+                                                if (mediaPlayer != null) mediaPlayer.release();
+
+                                                mediaPlayer = new MediaPlayer();
+                                                try {
+                                                    mediaPlayer.setDataSource("https://codeschoolspy.000webhostapp.com/song/love_yourself_justin.mp3");
+                                                    mediaPlayer.prepare();
+                                                    mediaPlayer.start();
+                                                } catch (IOException e) {
+                                                    e.printStackTrace();
+                                                }
+
+                                            }
+                                        });
+
+
+
+
+                                    }else{
+                                        Toast.makeText(MainActivity.this, "Connect your Internet", Toast.LENGTH_SHORT).show();
+                                    }
+
+
+
+
+                                }
+                            });
+                            // justin refer profile close
+
+
+
+
+
+                            // justin profile start
+                            justin_profile_round.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+
+                                    singer_homepage.setVisibility(View.GONE);
+                                    singer_profile.setVisibility(View.VISIBLE);
+
+
+                                    singer_profile.startAnimation(left_rightstart);
+
+
+                                    follow_btn.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+
+                                            follow_btn.setVisibility(View.GONE);
+                                            unfollow_btn.setVisibility(View.VISIBLE);
+
+                                            Toast.makeText(MainActivity.this, "You are now following Justin Bieber", Toast.LENGTH_SHORT).show();
+
+                                        }
+                                    });
+
+
+
+                                    unfollow_btn.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+
+                                            follow_btn.setVisibility(View.VISIBLE);
+                                            unfollow_btn.setVisibility(View.GONE);
+
+                                            Toast.makeText(MainActivity.this, "You are not following Justin Bieber anymore", Toast.LENGTH_SHORT).show();
+
+                                        }
+                                    });
+
+
+
+                                    singer_profile_back_btn.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+
+                                            singer_homepage.setVisibility(View.VISIBLE);
+                                            singer_profile.setVisibility(View.GONE);
+
+                                            singer_homepage.startAnimation(right_leftstart);
 
                                         }
                                     });

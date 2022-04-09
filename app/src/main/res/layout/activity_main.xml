@@ -636,9 +636,8 @@
 
 
 
+
             <!-- singer profile start -->
-
-
 
 
             <com.amar.library.ui.StickyScrollView
@@ -1484,8 +1483,6 @@
 
 
             </com.amar.library.ui.StickyScrollView>
-
-
 
 
             <!-- singer profile close -->
