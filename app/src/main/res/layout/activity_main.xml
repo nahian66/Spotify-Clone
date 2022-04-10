@@ -16,6 +16,7 @@
 
 
 
+
     <ScrollView
         android:layout_below="@+id/top_toolbar"
         android:layout_width="match_parent"
@@ -1548,6 +1549,158 @@
 
 
 
+    <!-- baby player screen start -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_marginBottom="65dp"
+        >
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardPreventCornerOverlap="true"
+            android:backgroundTint="#fffdd8"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    >
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="25dp"
+                        >
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/stay_justin"
+                            />
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:weightSum="60"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="Stay"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_weight="30"
+                        android:layout_gravity="bottom"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Justin Bieber"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:layout_weight="30"
+                        android:layout_gravity="top"
+                        />
+
+
+                </LinearLayout>
+
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/heart"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    />
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/heart_filled"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginLeft="20dp"
+                    />
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/play_button"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    />
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/pause"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginLeft="15dp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+    <!-- baby player screen close -->
 
 
 
