@@ -34,6 +34,12 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout home_layout, explore_layout, audio_library_layout;
 
 
+
+    // player option start
+    LinearLayout stay_player, ghost_player, love_yourself_player;
+    // player option close
+
+
     // justin refer profile start
     LinearLayout justin_refer_profile;
     // justin refer profile close
@@ -64,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     // animation start
-    Animation left_rightstart, right_leftstart;
+    Animation left_rightstart, right_leftstart, bottom_upstart, up_bottomstart;
     // animation close
 
 
@@ -103,9 +109,16 @@ public class MainActivity extends AppCompatActivity {
         justin_refer_profile = findViewById(R.id.justin_refer_profile);
 
 
+        stay_player = findViewById(R.id.stay_player);
+        ghost_player = findViewById(R.id.ghost_player);
+        love_yourself_player = findViewById(R.id.love_yourself_player);
+
+
         // animation start
         left_rightstart = AnimationUtils.loadAnimation(MainActivity.this, R.anim.left_right);
         right_leftstart = AnimationUtils.loadAnimation(MainActivity.this, R.anim.right_left);
+        bottom_upstart = AnimationUtils.loadAnimation(MainActivity.this, R.anim.bottom_up);
+        up_bottomstart = AnimationUtils.loadAnimation(MainActivity.this, R.anim.up_bottom);
         // animation close
 
 
@@ -222,6 +235,15 @@ public class MainActivity extends AppCompatActivity {
                                                     mediaPlayer.setDataSource("https://codeschoolspy.000webhostapp.com/song/stay_justin.mp3");
                                                     mediaPlayer.prepare();
                                                     mediaPlayer.start();
+
+                                                    stay_player.setVisibility(View.VISIBLE);
+                                                    stay_player.startAnimation(bottom_upstart);
+
+                                                    ghost_player.setVisibility(View.GONE);
+                                                    ghost_player.startAnimation(up_bottomstart);
+
+                                                    love_yourself_player.setVisibility(View.GONE);
+                                                    love_yourself_player.startAnimation(up_bottomstart);
                                                 } catch (IOException e) {
                                                     e.printStackTrace();
                                                 }
@@ -244,6 +266,15 @@ public class MainActivity extends AppCompatActivity {
                                                     mediaPlayer.setDataSource("https://codeschoolspy.000webhostapp.com/song/ghost_justin.mp3");
                                                     mediaPlayer.prepare();
                                                     mediaPlayer.start();
+
+                                                    stay_player.setVisibility(View.GONE);
+                                                    stay_player.startAnimation(up_bottomstart);
+
+                                                    ghost_player.setVisibility(View.VISIBLE);
+                                                    ghost_player.startAnimation(bottom_upstart);
+
+                                                    love_yourself_player.setVisibility(View.GONE);
+                                                    love_yourself_player.startAnimation(up_bottomstart);
                                                 } catch (IOException e) {
                                                     e.printStackTrace();
                                                 }
@@ -265,6 +296,15 @@ public class MainActivity extends AppCompatActivity {
                                                     mediaPlayer.setDataSource("https://codeschoolspy.000webhostapp.com/song/love_yourself_justin.mp3");
                                                     mediaPlayer.prepare();
                                                     mediaPlayer.start();
+
+                                                    stay_player.setVisibility(View.GONE);
+                                                    stay_player.startAnimation(up_bottomstart);
+
+                                                    ghost_player.setVisibility(View.GONE);
+                                                    ghost_player.startAnimation(up_bottomstart);
+
+                                                    love_yourself_player.setVisibility(View.VISIBLE);
+                                                    love_yourself_player.startAnimation(bottom_upstart);
                                                 } catch (IOException e) {
                                                     e.printStackTrace();
                                                 }
@@ -377,6 +417,15 @@ public class MainActivity extends AppCompatActivity {
                                                     mediaPlayer.setDataSource("https://codeschoolspy.000webhostapp.com/song/stay_justin.mp3");
                                                     mediaPlayer.prepare();
                                                     mediaPlayer.start();
+
+                                                    stay_player.setVisibility(View.VISIBLE);
+                                                    stay_player.startAnimation(bottom_upstart);
+
+                                                    ghost_player.setVisibility(View.GONE);
+                                                    ghost_player.startAnimation(up_bottomstart);
+
+                                                    love_yourself_player.setVisibility(View.GONE);
+                                                    love_yourself_player.startAnimation(up_bottomstart);
                                                 } catch (IOException e) {
                                                     e.printStackTrace();
                                                 }
@@ -399,6 +448,15 @@ public class MainActivity extends AppCompatActivity {
                                                     mediaPlayer.setDataSource("https://codeschoolspy.000webhostapp.com/song/ghost_justin.mp3");
                                                     mediaPlayer.prepare();
                                                     mediaPlayer.start();
+
+                                                    stay_player.setVisibility(View.GONE);
+                                                    stay_player.startAnimation(up_bottomstart);
+
+                                                    ghost_player.setVisibility(View.VISIBLE);
+                                                    ghost_player.startAnimation(bottom_upstart);
+
+                                                    love_yourself_player.setVisibility(View.GONE);
+                                                    love_yourself_player.startAnimation(up_bottomstart);
                                                 } catch (IOException e) {
                                                     e.printStackTrace();
                                                 }
@@ -420,6 +478,15 @@ public class MainActivity extends AppCompatActivity {
                                                     mediaPlayer.setDataSource("https://codeschoolspy.000webhostapp.com/song/love_yourself_justin.mp3");
                                                     mediaPlayer.prepare();
                                                     mediaPlayer.start();
+
+                                                    stay_player.setVisibility(View.GONE);
+                                                    stay_player.startAnimation(up_bottomstart);
+
+                                                    ghost_player.setVisibility(View.GONE);
+                                                    ghost_player.startAnimation(up_bottomstart);
+
+                                                    love_yourself_player.setVisibility(View.VISIBLE);
+                                                    love_yourself_player.startAnimation(bottom_upstart);
                                                 } catch (IOException e) {
                                                     e.printStackTrace();
                                                 }
