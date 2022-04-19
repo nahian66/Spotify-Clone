@@ -69,6 +69,11 @@ public class MainActivity extends AppCompatActivity {
     CardView justin_profile_round;
 
 
+    // stay bottom player start
+    ImageView stay_love, stay_love_filled, stay_playbtn, stay_pausebtn;
+    // stay bottom player close
+
+
     // animation start
     Animation left_rightstart, right_leftstart, bottom_upstart, up_bottomstart;
     // animation close
@@ -109,9 +114,19 @@ public class MainActivity extends AppCompatActivity {
         justin_refer_profile = findViewById(R.id.justin_refer_profile);
 
 
+        // bottom player start
         stay_player = findViewById(R.id.stay_player);
         ghost_player = findViewById(R.id.ghost_player);
         love_yourself_player = findViewById(R.id.love_yourself_player);
+        // bottom player close
+
+
+        // stay bottom player start
+        stay_love = findViewById(R.id.stay_love);
+        stay_love_filled = findViewById(R.id.stay_filled_love);
+        stay_playbtn = findViewById(R.id.stay_playbtn);
+        stay_pausebtn = findViewById(R.id.stay_pausebtn);
+        // stay bottom player close
 
 
         // animation start
