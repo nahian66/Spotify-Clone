@@ -1816,6 +1816,7 @@
 
 
                 <ImageView
+                    android:id="@+id/ghost_love"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/heart"
@@ -1825,6 +1826,7 @@
 
 
                 <ImageView
+                    android:id="@+id/ghost_love_filled"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/heart_filled"
@@ -1835,6 +1837,7 @@
 
 
                 <ImageView
+                    android:id="@+id/ghost_playbtn"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/play_button"
@@ -1845,6 +1848,7 @@
 
 
                 <ImageView
+                    android:id="@+id/ghost_pausebtn"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/pause"
@@ -1973,6 +1977,7 @@
 
 
                 <ImageView
+                    android:id="@+id/love_yourself_love"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/heart"
@@ -1982,6 +1987,7 @@
 
 
                 <ImageView
+                    android:id="@+id/love_yourself_love_filled"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/heart_filled"
@@ -1992,6 +1998,7 @@
 
 
                 <ImageView
+                    android:id="@+id/love_yourself_playbtn"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/play_button"
@@ -2002,6 +2009,7 @@
 
 
                 <ImageView
+                    android:id="@+id/love_yourself_pausebtn"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/pause"

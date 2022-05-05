@@ -73,6 +73,14 @@ public class MainActivity extends AppCompatActivity {
     ImageView stay_love, stay_love_filled, stay_playbtn, stay_pausebtn;
     // stay bottom player close
 
+    // ghost bottom player start
+    ImageView ghost_love, ghost_love_filled, ghost_playbtn, ghost_pausebtn;
+    // ghost bottom player close
+
+    // love yourself justin bottom player start
+    ImageView love_yourself_love, love_yourself_love_filled, love_yourself_playbtn, love_yourself_pausebtn;
+    // live yourself bottom player close
+
 
     // animation start
     Animation left_rightstart, right_leftstart, bottom_upstart, up_bottomstart;
@@ -127,6 +135,22 @@ public class MainActivity extends AppCompatActivity {
         stay_playbtn = findViewById(R.id.stay_playbtn);
         stay_pausebtn = findViewById(R.id.stay_pausebtn);
         // stay bottom player close
+
+
+        // ghost bottom player start
+        ghost_love = findViewById(R.id.ghost_love);
+        ghost_love_filled = findViewById(R.id.ghost_love_filled);
+        ghost_playbtn = findViewById(R.id.ghost_playbtn);
+        ghost_pausebtn = findViewById(R.id.ghost_pausebtn);
+        // ghost bottom player start
+
+
+        // love yourself justin bottom player start
+        love_yourself_love = findViewById(R.id.love_yourself_love);
+        love_yourself_love_filled = findViewById(R.id.love_yourself_love_filled);
+        love_yourself_playbtn = findViewById(R.id.love_yourself_playbtn);
+        love_yourself_pausebtn = findViewById(R.id.love_yourself_pausebtn);
+        // love yourself justin bottom player close
 
 
         // animation start
@@ -254,6 +278,28 @@ public class MainActivity extends AppCompatActivity {
                                                     stay_player.setVisibility(View.VISIBLE);
                                                     stay_player.startAnimation(bottom_upstart);
 
+
+                                                    // stay play pause btn start
+                                                    stay_playbtn.setOnClickListener(new View.OnClickListener() {
+                                                        @Override
+                                                        public void onClick(View v) {
+                                                            mediaPlayer.start();
+                                                            stay_pausebtn.setVisibility(View.VISIBLE);
+                                                            stay_playbtn.setVisibility(View.GONE);
+                                                        }
+                                                    });
+
+                                                    stay_pausebtn.setOnClickListener(new View.OnClickListener() {
+                                                        @Override
+                                                        public void onClick(View v) {
+                                                            mediaPlayer.pause();
+                                                            stay_pausebtn.setVisibility(View.GONE);
+                                                            stay_playbtn.setVisibility(View.VISIBLE);
+                                                        }
+                                                    });
+                                                    // stay play pause btn close
+
+
                                                     ghost_player.setVisibility(View.GONE);
                                                     ghost_player.startAnimation(up_bottomstart);
 
@@ -285,6 +331,28 @@ public class MainActivity extends AppCompatActivity {
                                                     stay_player.setVisibility(View.GONE);
                                                     stay_player.startAnimation(up_bottomstart);
 
+
+                                                    // ghost play pause btn start
+                                                    ghost_playbtn.setOnClickListener(new View.OnClickListener() {
+                                                        @Override
+                                                        public void onClick(View v) {
+                                                            mediaPlayer.start();
+                                                            ghost_pausebtn.setVisibility(View.VISIBLE);
+                                                            ghost_playbtn.setVisibility(View.GONE);
+                                                        }
+                                                    });
+
+                                                    ghost_pausebtn.setOnClickListener(new View.OnClickListener() {
+                                                        @Override
+                                                        public void onClick(View v) {
+                                                            mediaPlayer.pause();
+                                                            ghost_pausebtn.setVisibility(View.GONE);
+                                                            ghost_playbtn.setVisibility(View.VISIBLE);
+                                                        }
+                                                    });
+                                                    // ghost play pause btn close
+
+
                                                     ghost_player.setVisibility(View.VISIBLE);
                                                     ghost_player.startAnimation(bottom_upstart);
 
@@ -314,6 +382,28 @@ public class MainActivity extends AppCompatActivity {
 
                                                     stay_player.setVisibility(View.GONE);
                                                     stay_player.startAnimation(up_bottomstart);
+
+
+                                                    // love yourself play pause btn start
+                                                    love_yourself_playbtn.setOnClickListener(new View.OnClickListener() {
+                                                        @Override
+                                                        public void onClick(View v) {
+                                                            mediaPlayer.start();
+                                                            love_yourself_pausebtn.setVisibility(View.VISIBLE);
+                                                            love_yourself_playbtn.setVisibility(View.GONE);
+                                                        }
+                                                    });
+
+                                                    love_yourself_pausebtn.setOnClickListener(new View.OnClickListener() {
+                                                        @Override
+                                                        public void onClick(View v) {
+                                                            mediaPlayer.pause();
+                                                            love_yourself_pausebtn.setVisibility(View.GONE);
+                                                            love_yourself_playbtn.setVisibility(View.VISIBLE);
+                                                        }
+                                                    });
+                                                    // love yourself play pause btn close
+
 
                                                     ghost_player.setVisibility(View.GONE);
                                                     ghost_player.startAnimation(up_bottomstart);
@@ -436,6 +526,28 @@ public class MainActivity extends AppCompatActivity {
                                                     stay_player.setVisibility(View.VISIBLE);
                                                     stay_player.startAnimation(bottom_upstart);
 
+
+                                                    // stay play pause btn start
+                                                    stay_playbtn.setOnClickListener(new View.OnClickListener() {
+                                                        @Override
+                                                        public void onClick(View v) {
+                                                            mediaPlayer.start();
+                                                            stay_pausebtn.setVisibility(View.VISIBLE);
+                                                            stay_playbtn.setVisibility(View.GONE);
+                                                        }
+                                                    });
+
+                                                    stay_pausebtn.setOnClickListener(new View.OnClickListener() {
+                                                        @Override
+                                                        public void onClick(View v) {
+                                                            mediaPlayer.pause();
+                                                            stay_pausebtn.setVisibility(View.GONE);
+                                                            stay_playbtn.setVisibility(View.VISIBLE);
+                                                        }
+                                                    });
+                                                    // stay play pause btn close
+
+
                                                     ghost_player.setVisibility(View.GONE);
                                                     ghost_player.startAnimation(up_bottomstart);
 
@@ -467,6 +579,28 @@ public class MainActivity extends AppCompatActivity {
                                                     stay_player.setVisibility(View.GONE);
                                                     stay_player.startAnimation(up_bottomstart);
 
+
+                                                    // ghost play pause btn start
+                                                    ghost_playbtn.setOnClickListener(new View.OnClickListener() {
+                                                        @Override
+                                                        public void onClick(View v) {
+                                                            mediaPlayer.start();
+                                                            ghost_pausebtn.setVisibility(View.VISIBLE);
+                                                            ghost_playbtn.setVisibility(View.GONE);
+                                                        }
+                                                    });
+
+                                                    ghost_pausebtn.setOnClickListener(new View.OnClickListener() {
+                                                        @Override
+                                                        public void onClick(View v) {
+                                                            mediaPlayer.pause();
+                                                            ghost_pausebtn.setVisibility(View.GONE);
+                                                            ghost_playbtn.setVisibility(View.VISIBLE);
+                                                        }
+                                                    });
+                                                    // ghost play pause btn close
+
+
                                                     ghost_player.setVisibility(View.VISIBLE);
                                                     ghost_player.startAnimation(bottom_upstart);
 
@@ -496,6 +630,28 @@ public class MainActivity extends AppCompatActivity {
 
                                                     stay_player.setVisibility(View.GONE);
                                                     stay_player.startAnimation(up_bottomstart);
+
+
+                                                    // love yourself play pause btn start
+                                                    love_yourself_playbtn.setOnClickListener(new View.OnClickListener() {
+                                                        @Override
+                                                        public void onClick(View v) {
+                                                            mediaPlayer.start();
+                                                            love_yourself_pausebtn.setVisibility(View.VISIBLE);
+                                                            love_yourself_playbtn.setVisibility(View.GONE);
+                                                        }
+                                                    });
+
+                                                    love_yourself_pausebtn.setOnClickListener(new View.OnClickListener() {
+                                                        @Override
+                                                        public void onClick(View v) {
+                                                            mediaPlayer.pause();
+                                                            love_yourself_pausebtn.setVisibility(View.GONE);
+                                                            love_yourself_playbtn.setVisibility(View.VISIBLE);
+                                                        }
+                                                    });
+                                                    // love yourself play pause btn close
+
 
                                                     ghost_player.setVisibility(View.GONE);
                                                     ghost_player.startAnimation(up_bottomstart);
